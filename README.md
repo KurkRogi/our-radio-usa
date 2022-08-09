@@ -7,34 +7,25 @@ Our Radio USA is a website for people who emigrated to abroad and would like to 
 ### **Implemented Features**
 
 1. **Navigation Bar**
-
 - The purpose of this element is to display website logo acting as and identity element and a link to the home page, and most importantly allow the user to easily navigate through the website pages.
-
 - This feature is repeated on all pages and additionally helps to identify current location on the website by highlighting corresponding link.
 - By having this feature available on all pages the need to use browsers navigation mechanism is eliminated, especially on mobile devices.
 
 2. **The Home Page**
-
 **[UX considerations](#ux-considerations)** indicated that the most important functionality is the access to the radio stream and this is implemented on the home page of this application. This page consists of two features which allow the user to do this in easy and unobstructed way.
-
 - The above the fold section of home page includes an animated image with a CTA element which is a Play widget. The widget allows to start and pause playing the radio.  
 This section also includes a secondary CTA button which gets the user to the below section of the home page with additional methods of accessing the radio.
 - Below the fold section lists available mobile applications with which the radio can be listened to.
 
 3. **The Footer**
-
 The footer feature displays links to the radio's social media and repeats links to two other features: contact form and programme guide
 
 4. **Programme Guide Page**
-
 This feature displays radio programming in a tabular form
-
 5. **Contact Page**
-
 This page allows user to send a message to the radio stuff by filling in a contact form
 
 ### **Features Left to Implement**
-
 The following features need to be implemented to fulfil [Scope Plane](#scope-plane) decisions.
 
 1. A page showing short profiles of the radio stuff
@@ -47,6 +38,14 @@ The following features need to be implemented to fulfil [Scope Plane](#scope-pla
 
 - cross-browser testing
 - crores-platform testing
+
+### Bugs fixed
+
+- Missing blank lines was causing wrong display of README.md file in browser.
+
+### Bugs Remining
+
+
 
 ### **Validation**
 
