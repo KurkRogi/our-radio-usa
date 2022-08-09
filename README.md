@@ -1,108 +1,62 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome USER_NAME,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
+# Our Radio USA Project
+Our Radio USA is a website for people who emigrated to abroad and would like to hear live streamed radio from their homeland. Modern technology of audio streaming allows them to have access to this radio service from any place all over the world, any time on any device. This allows listeners to be in touch with current affairs of their country so they can relate to them in conversations with their families and friends home.
+## Features
 ---
-
-Happy coding!
+### **Implemented Features**
+1. **Navigation Bar**
+- The purpose of this element is to display website logo acting as and identity element and a link to the home page, and most importantly allow the user to easyly navigate through the website pages.
+- This feature is repeated on all pages and additionaly helps to identyfy current location on the website by highlighting corresponding link.
+- By having this feature available on all pages the need to use browsers navigation mechanism is eliminated, especially on mobile devices.
+2. **The Home Page**  
+UX considerations indicated thet the most important functionality is the access to the radio stream and this is implemented on the home page of this application. This page consists of two features which allow the user to do this in easy and unobstructed way.
+- The above the fold section of home page includes an animated image with a CTA element which is a Play widget. The widget allows to start and pause playing the radio.  
+This section also includes a secondary CTA button which gets the user to the below section of the home page with additional methods of accessing the radio.
+- Below the fold section lists available mobile applications whith which the radio can be listened to.
+3. **The Footer**  
+The footer feature displays links to the radio's social media and repeats links to two other features: contact form and programme guide
+4. **Programme Guide Page**  
+This feature displays radio programming in a tabular form
+5. **Contact Page**
+This page allows user to send a message to the radio stuff by filling in a contact form
+### **Features Left to Implement**  
+The following features need to be implemented to fulfill Scope Plan decisions.
+1. A page showing short profiles of the radio stuff
+2. An prammes archive page to give acces to previous programmes, interviews and cyclical programmes.
+3. Comment/testimony section
+## **Testing**
+*Describe what tests where done, what bugs were detected and addresed or not. Responsivenes, links, images*
+- cross-browser testing
+- crorss-platform testing
+### **Validation**
+- HTML validation
+- CSS validation
+## **Deployment**  
+To deploy this application please follow these steps:
+1. In the GitHub repository click `Settings` 
+2. On the list on the left click `Pages`
+3. Select the `main` branch and press the `Save` button
+4. Refresh the page and follow the link after words **Your site is live at**
+## **Credits**  
+*This section will list all the media sources, code inspiration and gudes followed in order to create the website.*
+## **UX Considerations**  
+The following decisions were made after considering the UX aspect of the website in accordance with 5 Planes of UX:
+1. **Strategy Plane**  
+The purpose of the website/application is to give acces to a live streamed internet radio to it's target audience. The profile of the radio is an emigration oriented and the main purpose is to give access to people all other the world living in different time zones. The contents of the radio programming is outside of the scope of this website but **Scope Plane** lists features which make some of these goals possible.
+2. **Scope Plane**  
+The basic features which need to be implemented to achieve the MVP are as follows:
+- Creation of navigation bar to allow access to different website functions
+- Easy access to the radio live stream
+- List of radio programmes shedule
+- Allow listeners to contact the radio
+Extended features to implement are:
+- Give acces to past programmes to allow listeners from different time zones to listen at time convenient to them
+- Showcase authors and stuff profiles, with photos in order to create better connection with listeners
+- Feture to allow posting comments/testimonies to create the *alive and connected* vibe
+3. **Structure Plane**
+- The most important feature is the 'listen live' function, this is implemented on the Home Page
+- The 'Programming' information is less importand and is the secondary information, presented on a separate page.
+- The third order of importance is the 'Contact' form, presented on another separate page.
+4. **Sceleton Plane**  
+*To follow but closely related to the above*
+5. **Surface Plane**  
+*To follow. Modern, clean and unclutered design with minimal distraction is preffered. Contrary to current trend, the background should be rather dark than ligh. This is more important on mobile devices so maybe change background to dark only for small screens*
