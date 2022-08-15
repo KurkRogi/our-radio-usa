@@ -23,12 +23,12 @@ The footer feature displays links to the radio's social media and repeats links 
 4. **Programme Guide Page**
 This feature displays radio programming in a tabular form
 5. **Contact Page**
-This page allows user to send a message to the radio stuff by filling in a contact form
+This page allows user to send a message to the radio staff by filling in a contact form
 
 ### **Features Left to Implement**
 The following features need to be implemented to fulfil [Scope Plane](#scope-plane) decisions.
 
-1. A page showing short profiles of the radio stuff
+1. A page showing short profiles of the radio staff
 2. An programmes archive page to give access to previous programmes, interviews and cyclical programmes.
 3. Comment/testimony section
 
@@ -43,7 +43,7 @@ The following features need to be implemented to fulfil [Scope Plane](#scope-pla
 
 - Missing blank lines was causing wrong display of README.md file in browser.
 
-### Bugs Remining
+### Bugs Remaining
 
 
 
@@ -96,7 +96,7 @@ The basic features which need to be implemented to achieve the MVP are as follow
 Extended features to implement are:
 
 - Give access to past programmes to allow listeners from different time zones to listen at time convenient to them
-- Showcase authors and stuff profiles, with photos in order to create better connection with listeners
+- Showcase authors and staff profiles, with photos in order to create better connection with listeners
 - Feature to allow posting comments/testimonies to create the *alive and connected* vibe
 
 ### **Structure Plane**
