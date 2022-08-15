@@ -51,6 +51,7 @@ The following features need to be implemented to fulfil [Scope Plane](#scope-pla
 
 - HTML validation
 - CSS validation
+- SVG graphics was validated with https://validator.w3.org/check and passed the validation without errors or warnings.
 
 ## **Deployment**
 
