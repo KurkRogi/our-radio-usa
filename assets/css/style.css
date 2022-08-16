@@ -1,6 +1,6 @@
 /* Custom properties definition in global scope */
 :root {
-    --background-color: rgb(64, 36, 66);
+    --bg-color: rgb(64, 36, 66);
     --accent-color: rgb(247, 112, 23);
     --accent-light-color: rgb(254, 179, 92);
     --secondary-color: rgb(156, 136, 197);
@@ -15,4 +15,15 @@
 body {
     margin: 0;
     padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    width: 128px;
 }
