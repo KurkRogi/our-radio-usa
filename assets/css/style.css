@@ -29,5 +29,6 @@ header {
 }
 
 #logo {
-    width: 128px;
+    width: 90%;
+    max-width: 240px;
 }
