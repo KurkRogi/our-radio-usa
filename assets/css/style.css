@@ -52,6 +52,33 @@ header {
 
 #main-navigation a.current-page {
     color: var(--secondary-color);
+    position: relative;
+    --arrow-size: 7px;
+}
+
+/* The CSS triangle trick is from
+https://css-tricks.com/snippets/css/css-triangle/ */
+
+#main-navigation a.current-page::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: calc((var(--arrow-size) + 5px) * -1);
+    top: 0.5px;
+    border: var(--arrow-size) solid transparent;
+    border-left: var(--arrow-size) solid var(--secondary-color);
+}
+
+#main-navigation a.current-page::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right: calc((var(--arrow-size) + 5px) * -1);
+    top: 0.5px;
+    border: var(--arrow-size) solid transparent;
+    border-right: var(--arrow-size) solid var(--secondary-color);
 }
 
 #main-navigation li {
