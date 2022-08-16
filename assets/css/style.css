@@ -29,6 +29,11 @@ header {
 }
 
 #logo {
-    width: 90%;
-    max-width: 240px;
+    width: 80%;
+    max-width: 480px;
+    aspect-ratio: 447 / 62;
+    background-image: url(../images/our-radio-usa-logo-landscape-transparent-outlines.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
