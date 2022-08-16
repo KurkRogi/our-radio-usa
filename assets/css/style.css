@@ -4,7 +4,7 @@
     --accent-color: rgb(247, 112, 23);
     --accent-light-color: rgb(254, 179, 92);
     --secondary-color: rgb(156, 136, 197);
-    --secondary-color-light: rgb(197, 179, 229)
+    --secondary-color-light: rgb(197, 179, 229);
 }
 
 /* Basic resets */
@@ -36,4 +36,24 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+#main-navigation ul {
+    color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-navigation a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#main-navigation a.current-page {
+    color: var(--secondary-color);
+}
+
+#main-navigation li {
+    text-align: center;
 }
