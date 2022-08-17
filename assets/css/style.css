@@ -141,3 +141,29 @@ footer > a {
 footer > a > img {
     max-width: 128px;
 }
+
+footer > a:hover {
+    animation-name: chevron-shake;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes chevron-shake {
+    start {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(5px);
+    }
+    end {
+        transform: translateY(0);
+    }
+
+}
