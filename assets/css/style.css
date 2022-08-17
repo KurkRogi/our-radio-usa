@@ -133,3 +133,11 @@ footer p {
     margin: 0 0 1rem 0;
     line-height: 1.5;
 }
+
+footer > a {
+    text-align: center;
+}
+
+footer > a > img {
+    max-width: 128px;
+}
