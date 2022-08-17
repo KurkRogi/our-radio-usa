@@ -144,9 +144,10 @@ footer > a > img {
 
 footer > a:hover {
     animation-name: chevron-shake;
-    animation-duration: 500ms;
+    animation-duration: 440ms;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
+    animation-iteration-count: 2;
 }
 
 @keyframes chevron-shake {
