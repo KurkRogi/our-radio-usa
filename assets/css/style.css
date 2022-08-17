@@ -1,3 +1,6 @@
+/* Google font included here rather then in the head of HTML for ease of maintanance */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
+
 /* Custom properties definition in global scope */
 :root {
     --bg-color: rgb(64, 36, 66);
@@ -15,6 +18,8 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
 }
 
 /* Header styling */
@@ -52,7 +57,9 @@ header {
 
 #main-navigation a.current-page {
     color: var(--secondary-color);
+    font-weight: 400;
     position: relative;
+    /* This custom property is cascaded down and used in pseudo elements */
     --arrow-size: 7px;
 }
 
@@ -65,7 +72,7 @@ https://css-tricks.com/snippets/css/css-triangle/ */
     width: 0;
     height: 0;
     left: calc((var(--arrow-size) + 5px) * -1);
-    top: 0.5px;
+    top: 6px;
     border: var(--arrow-size) solid transparent;
     border-left: var(--arrow-size) solid var(--secondary-color);
 }
@@ -76,7 +83,7 @@ https://css-tricks.com/snippets/css/css-triangle/ */
     width: 0;
     height: 0;
     right: calc((var(--arrow-size) + 5px) * -1);
-    top: 0.5px;
+    top: 6px;
     border: var(--arrow-size) solid transparent;
     border-right: var(--arrow-size) solid var(--secondary-color);
 }
