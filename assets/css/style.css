@@ -55,6 +55,10 @@ header {
     color: inherit;
 }
 
+#main-navigation a:hover {
+    border-bottom: 2px dotted var(--secondary-color);
+}
+
 #main-navigation a.current-page {
     color: var(--secondary-color);
     font-weight: 400;
