@@ -41,12 +41,13 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: 1rem 0 1rem 0;
 }
 
 #main-navigation ul {
     color: white;
     list-style: none;
-    padding: 0;
+    padding: 0 0 1rem 0;
     margin: 0;
 }
 
@@ -94,4 +95,5 @@ https://css-tricks.com/snippets/css/css-triangle/ */
 
 #main-navigation li {
     text-align: center;
+    padding: 0.25rem;
 }
