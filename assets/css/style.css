@@ -54,6 +54,7 @@ header {
 #main-navigation a {
     text-decoration: none;
     color: inherit;
+    padding: 0 0.25rem;
 }
 
 #main-navigation a:hover {
@@ -95,5 +96,5 @@ https://css-tricks.com/snippets/css/css-triangle/ */
 
 #main-navigation li {
     text-align: center;
-    padding: 0.25rem;
+    padding: 0.25rem 0;
 }
