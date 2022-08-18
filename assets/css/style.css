@@ -23,6 +23,12 @@ body {
     min-width: 320px;
 }
 
+h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--accent-color);
+}
+
 /* Header styling */
 header {
     background-color: var(--bg-color);
@@ -61,7 +67,6 @@ header {
 }
 
 #main-navigation a:hover {
-    /* border-bottom: 2px dotted var(--secondary-color); */
     text-decoration-line: underline;
     text-decoration-style: dotted;
     text-decoration-color: currentColor;
@@ -184,4 +189,63 @@ footer > a:hover {
 
 main {
     flex-grow: 1;
+}
+
+/* Main section styling */
+#main-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    justify-content: space-around;
+}
+
+#main-player > * {
+    width: 80%;
+    margin: 0;
+}
+
+#main-player h1 {
+    margin: 0;
+}
+
+#main-player p {
+    margin: 0;
+    color: white;
+}
+#stream-player {
+    width: 60%;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+#main-player a {
+    margin: 0;
+    max-width: 128px;
+}
+
+#main-player a:hover {
+    animation-name: chevron-shake;
+    animation-duration: 440ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+}
+
+@keyframes chevron-shake-down {
+    start {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+    end {
+        transform: translateY(0);
+    }
 }
