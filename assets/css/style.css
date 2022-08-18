@@ -215,6 +215,7 @@ main {
 }
 #stream-player {
     width: 60%;
+    max-width: 300px;
     border: 2px solid var(--secondary-color);
     border-radius: 5px;
 }
@@ -225,7 +226,7 @@ main {
 }
 
 #main-player a:hover {
-    animation-name: chevron-shake;
+    animation-name: chevron-shake-down;
     animation-duration: 440ms;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
