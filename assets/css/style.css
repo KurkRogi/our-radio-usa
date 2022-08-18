@@ -167,5 +167,16 @@ footer > a:hover {
     end {
         transform: translateY(0);
     }
+}
 
+/* The above-the-fold styling*/
+#above-the-fold-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+main {
+    flex-grow: 1;
 }
