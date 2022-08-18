@@ -56,10 +56,15 @@ header {
     text-decoration: none;
     color: inherit;
     padding: 0 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 #main-navigation a:hover {
-    border-bottom: 2px dotted var(--secondary-color);
+    /* border-bottom: 2px dotted var(--secondary-color); */
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: currentColor;
 }
 
 #main-navigation a.current-page {
