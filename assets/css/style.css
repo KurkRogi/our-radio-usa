@@ -279,7 +279,8 @@ main {
 #about-radio h1 {
     color: var(--bg-color);
     margin-top: 0;
-    margin-bottom: 3rem
+    margin-bottom: 3rem;
+    font-size: clamp(1.8rem, calc(100vw /10), 2.5rem);
 }
 
 /* Square responsiv div trick from CSS Tricks */
