@@ -267,7 +267,6 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 3rem 0;
-    align-items: center;
     margin: 0 auto;
 
 }
@@ -309,4 +308,8 @@ main {
 .card p {
     color: var(--bg-color);
     margin: 0;
+}
+
+.card:last-child {
+    margin-bottom: 0;
 }
