@@ -27,6 +27,14 @@ h1 {
     font-size: 1.8rem;
     font-weight: 400;
     color: var(--accent-color);
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--bg-color);
+    line-height: 1.1;
 }
 
 /* Header styling */
@@ -250,4 +258,55 @@ main {
     end {
         transform: translateY(0);
     }
+}
+
+/* About the Radio Section styling */
+#about-radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+#about-radio > * {
+    max-width: 420px;
+    width: 80%;
+}
+
+#about-radio h1 {
+    color: var(--bg-color);
+    margin-top: 0;
+    margin-bottom: 3rem
+}
+
+/* Square responsiv div trick from CSS Tricks */
+
+.card div {
+    width: 70%;
+    padding-bottom: 70%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.card img {
+    position: absolute;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card {
+    margin-bottom: 3rem;
+}
+.card h2 {
+    color: var(--accent-color);
+    margin-bottom: 0;
+}
+
+.card p {
+    color: var(--bg-color);
+    margin: 0;
 }
