@@ -326,6 +326,7 @@ footer .secondary-nav-chevrons a:hover img{
     margin-bottom: 0;
 }
 
+/* Shedule page specific CSS */
 #schedule {
     width: 80%;
     max-width: 480px;
@@ -351,4 +352,20 @@ footer .secondary-nav-chevrons a:hover img{
 
 #schedule .card {
     margin-bottom: 1rem;
+}
+
+/* Apps page specific CSS */
+#apps {
+    width: 80%;
+    max-width: 480px;
+    margin: 2rem auto;
+}
+
+.apps-badges-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 270px;
+    margin: 2rem auto;
+    row-gap: 2rem;
 }
