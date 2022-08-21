@@ -11,10 +11,10 @@
     <title>Our Radio</title>
 </head>
 <body>
-   <div id="above-the-fold-section">
-       <header>
-            <a href="#" id="logo">
-            </a>
+   <div id="above-the-fold-section">   
+        <!--  Page header with the main navigation -->
+        <header>
+            <a href="#" id="logo"></a>
             <nav id="main-navigation">
                 <ul>
                     <li><a class="current-page" href="#above-the-fold-section">Home</a></li>
@@ -37,8 +37,15 @@
                 <script src="https://embed.radio.co/player/ba6f94a.js"></script>
                 <!-- End of insertion -->
             </div>
-            <a href="#about-radio"><img src="./assets/images/chevron-down-white.svg" alt="Chevron pointing down"></a>
         </main>
+        
+        <!-- Secondary navigation with link to about the radio section 
+            and also seving as a cue for more conten below the fold -->
+        <nav class="secondary-nav-chevrons">
+            <a href="#about-radio">
+                <img src="./assets/images/chevron-down-white.svg" alt="Chevron pointing down">
+            </a>
+        </nav>
    </div>
     
     <!-- About Radio section -->
@@ -80,7 +87,11 @@
             <li><a href="mailto:webregadd@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
         </ul>
         <p>Our Radio Ltd<br>300 Lower Gardiner Street,<br>Dublin<br>Phone: +353 (0)1 123456</p>
-        <a href="#above-the-fold-section"><img src="./assets/images/chevron-up-white.svg" alt="Chevron pointing up"></a>
+        <nav class="secondary-nav-chevrons">
+            <a href="#above-the-fold-section">
+                <img src="./assets/images/chevron-up-white.svg" alt="Chevron pointing up">
+            </a>
+        </nav>
     </footer>
 
 </body>

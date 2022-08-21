@@ -41,32 +41,58 @@ h2 {
     line-height: 1.1;
 }
 
-/* Header styling */
-header {
-    background-color: var(--bg-color);
+/* Styling common for both secondary nav chevrons */
+.secondary-nav-chevrons {
+    text-align: center;
+    animation-duration: 440ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+}
+
+.secondary-nav-chevrons img {
+    max-height: 32px;
+}
+
+/* The above-the-fold styling*/
+#above-the-fold-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    justify-items: start;
-    justify-content: flex-start;
+    padding: 3vh 0 5vh 0;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    height: 100vh;
+    row-gap: 6vw;
+    min-height: 667px;
+
+}
+
+#above-the-fold-section > * {
+    max-width: 420px;
+    width: 80%;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #logo {
-    width: 80%;
-    max-width: 480px;
+    width: 100%;
     aspect-ratio: 447 / 62;
     background-image: url(../images/our-radio-usa-logo-landscape-transparent-outlines.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 1rem 0 1rem 0;
 }
 
 #main-navigation ul {
     color: white;
     list-style: none;
-    padding: 0 0 1rem 0;
+    padding: 0;
     margin: 0;
 }
 
@@ -122,8 +148,63 @@ https://css-tricks.com/snippets/css/css-triangle/ */
     padding: 0.25rem 0;
 }
 
-/* Footer section styling */
+/* Main section styling */
+#main-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 0.5rem;
+    row-gap: 3vh;
+    flex-grow: 1;
+}
 
+#main-player > * {
+    margin: 0;
+}
+
+#main-player h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    width: 80%;
+}
+
+#main-player p {
+    margin: 0;
+    color: white;
+}
+#stream-player {
+    border: 1.5px solid var(--secondary-color);
+    border-radius: 5px;
+    overflow: hidden;
+    /* the layould holds integrity down to 760px height
+    the below calculation reduces stream player widget for smaller screens */
+    width: clamp(150px, calc(240px - max(0px, calc((780px - 100vh) * 0.796))), 80%);
+}
+
+#main-player .secondary-nav-chevrons a:hover {
+    animation-name: chevron-down-shake;
+}
+
+@keyframes chevron-down-shake {
+    start {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+    end {
+        transform: translateY(0);
+    }
+}
+
+/* Footer section styling */
 footer {
     background-color: var(--bg-color);
     padding: 1rem;
@@ -157,23 +238,11 @@ footer p {
     line-height: 1.5;
 }
 
-footer > a {
-    text-align: center;
+footer .secondary-nav-chevrons a:hover {
+    animation-name: chevron-up-shake;
 }
 
-footer > a > img {
-    max-width: 128px;
-}
-
-footer > a:hover {
-    animation-name: chevron-shake;
-    animation-duration: 440ms;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 2;
-}
-
-@keyframes chevron-shake {
+@keyframes chevron-up-shake {
     start {
         transform: translateY(0);
     }
@@ -185,79 +254,6 @@ footer > a:hover {
     }
     75% {
         transform: translateY(5px);
-    }
-    end {
-        transform: translateY(0);
-    }
-}
-
-/* The above-the-fold styling*/
-#above-the-fold-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100vh;
-}
-
-main {
-    flex-grow: 1;
-}
-
-/* Main section styling */
-#main-player {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--bg-color);
-    justify-content: space-between;
-    column-gap: 0.5rem;
-}
-
-#main-player > * {
-    width: 80%;
-    margin: 0;
-}
-
-#main-player h1 {
-    margin: 0;
-}
-
-#main-player p {
-    margin: 0;
-    color: white;
-}
-#stream-player {
-    width: 60%;
-    max-width: 300px;
-    border: 2px solid var(--secondary-color);
-    border-radius: 5px;
-}
-
-#main-player a {
-    margin: 0;
-    max-width: 128px;
-}
-
-#main-player a:hover {
-    animation-name: chevron-shake-down;
-    animation-duration: 440ms;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 2;
-}
-
-@keyframes chevron-shake-down {
-    start {
-        transform: translateY(0);
-    }
-    25% {
-        transform: translateY(5px);
-    }
-    50% {
-        transform: translateY(0);
-    }
-    75% {
-        transform: translateY(-5px);
     }
     end {
         transform: translateY(0);
@@ -272,7 +268,6 @@ main {
     align-items: center;
     padding: 3rem 0;
     margin: 0 auto;
-
 }
 
 #about-radio > * {
@@ -288,7 +283,6 @@ main {
 }
 
 /* Square responsiv div trick from CSS Tricks */
-
 .card div {
     width: 70%;
     padding-bottom: 70%;
