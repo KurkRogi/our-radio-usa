@@ -83,6 +83,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+    max-width: 480px;
 }
 
 #logo {
@@ -327,10 +328,27 @@ footer .secondary-nav-chevrons a:hover img{
 
 #schedule {
     width: 80%;
-    margin: 0 auto;
+    max-width: 480px;
+    margin: 2rem auto;
+
 }
 
 #schedule h1 {
     color: var(--main-color);
     font-size: clamp(1.8rem, calc(100vw /10), 2.5rem);
+    margin: 0 0 0.5rem;
+}
+
+#schedule h3 {
+    color: var(--main-color);
+    margin: 0;
+}
+
+#schedule p {
+    color: var(--main-color);
+    margin: 0 0 0.5rem;
+}
+
+#schedule .card {
+    margin-bottom: 1rem;
 }
