@@ -238,7 +238,7 @@ footer p {
     line-height: 1.5;
 }
 
-footer .secondary-nav-chevrons a:hover {
+footer .secondary-nav-chevrons a:hover img{
     animation-name: chevron-up-shake;
 }
 
