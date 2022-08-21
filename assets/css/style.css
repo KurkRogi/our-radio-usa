@@ -8,6 +8,7 @@
     --accent-light-color: rgb(254, 179, 92);
     --secondary-color: rgb(156, 136, 197);
     --secondary-color-light: rgb(197, 179, 229);
+    --secondary-color-lighter: rgb(221, 211, 238);
 }
 
 /* Basic resets */
@@ -396,4 +397,50 @@ footer .secondary-nav-chevrons a:hover img{
 
 #contact p {
     margin-top: 0;
+}
+
+.contact-form-wrapper {
+    width: 80%;
+    margin: 0 auto 2rem auto;
+}
+
+form > * {
+    display: block;
+    width: 100%;
+    font-family: Kanit, sans-serif;
+    font-weight: 200;
+    padding: 0.25rem;
+    font-size: 1rem;
+}
+
+form label {
+    color: var(--main-color);
+}
+
+form input,
+form textarea {
+    margin-bottom: 0.5rem;
+    border-radius: 3px;
+    border-color: var(--main-color);
+    border-width: 0.5px;
+}
+
+form input:focus,
+form textarea:focus {
+    background-color: var(--secondary-color-lighter);
+    outline-color: var(--secondary-color);
+}
+
+form input[type="submit"] {
+    margin: 1.5rem auto 0 auto;
+    width: 8ch;
+    display: inline-block;
+    background-color: var(--main-color);
+    color: var(--secondary-color-light);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
 }
