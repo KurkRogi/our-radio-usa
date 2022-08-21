@@ -44,14 +44,14 @@ h2 {
 /* Styling common for both secondary nav chevrons */
 .secondary-nav-chevrons {
     text-align: center;
-    animation-duration: 440ms;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 2;
 }
 
 .secondary-nav-chevrons img {
     max-height: 32px;
+    animation-duration: 440ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2; 
 }
 
 /* The above-the-fold styling*/
@@ -82,7 +82,7 @@ header {
 
 #logo {
     width: 100%;
-    aspect-ratio: 447 / 62;
+    aspect-ratio: 447/62;
     background-image: url(../images/our-radio-usa-logo-landscape-transparent-outlines.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -177,12 +177,12 @@ https://css-tricks.com/snippets/css/css-triangle/ */
     border: 1.5px solid var(--secondary-color);
     border-radius: 5px;
     overflow: hidden;
-    /* the layould holds integrity down to 760px height
+    /* the layout holds integrity down to 760px height
     the below calculation reduces stream player widget for smaller screens */
     width: clamp(150px, calc(240px - max(0px, calc((780px - 100vh) * 0.796))), 80%);
 }
 
-#main-player .secondary-nav-chevrons a:hover {
+#above-the-fold-section .secondary-nav-chevrons a:hover img{
     animation-name: chevron-down-shake;
 }
 
@@ -234,7 +234,7 @@ ul.social-media-links a {
 footer p {
     font-size: small;
     text-align: center;
-    margin: 0 0 1rem 0;
+    margin: 0 0 1.5rem 0;
     line-height: 1.5;
 }
 
