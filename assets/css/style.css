@@ -75,15 +75,17 @@ h2 {
     max-width: 420px;
 }
 
+#above-the-fold-section header,
+#page-top header {
+    width: 80%;
+    padding: 1rem;
+}
+
 /* Header styling */
 header {
-    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    max-width: 480px;
 }
 
 #logo {
@@ -361,6 +363,14 @@ footer .secondary-nav-chevrons a:hover img{
     margin: 2rem auto;
 }
 
+#apps h1 {
+    margin-bottom: 0.5rem;
+}
+
+#apps p {
+    margin-top: 0.5rem;
+}
+
 .apps-badges-wrapper {
     display: flex;
     flex-direction: column;
@@ -368,4 +378,22 @@ footer .secondary-nav-chevrons a:hover img{
     max-width: 270px;
     margin: 2rem auto;
     row-gap: 2rem;
+}
+
+/* Contact page styles */
+#contact {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#contact h1 {
+    margin-bottom: 0;
+}
+
+#contact h2 {
+    margin: 0.5rem 0;
+}
+
+#contact p {
+    margin-top: 0;
 }
