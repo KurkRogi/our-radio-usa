@@ -324,3 +324,13 @@ footer .secondary-nav-chevrons a:hover img{
 .card:last-child {
     margin-bottom: 0;
 }
+
+#schedule {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#schedule h1 {
+    color: var(--main-color);
+    font-size: clamp(1.8rem, calc(100vw /10), 2.5rem);
+}
