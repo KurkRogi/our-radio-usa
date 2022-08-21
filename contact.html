@@ -28,18 +28,28 @@
             </nav>
         </header>
     </div>
-    
-    <main id="contact">   
-            <h1>Contact us, please do!</h1>
-            <h2>During Live show</h2>
-            <p>Our phone line is open from 9 to 13 during live show. Please give us a buz at 
-                +353 (0)1 123456. Or alternatively use the form below.</p>
-            <h2>After hours</h2>
-            <p>Fill in the form below to send us a message.</p>       
-        <div class="contact-form-wrapper">
-        </div>
+
+    <main id="contact">
+        <h1>Contact us, please do!</h1>
+        <h2>During Live show</h2>
+        <p>Our phone line is open from 9 to 13 during live show. Please give us a buz at
+            +353 (0)1 123456. Or alternatively use the form below.</p>
+        <h2>After hours</h2>
+        <p>Fill in the form below to send us a message.</p>
     </main>
-   
+    <section class="contact-form-wrapper">
+        <!-- <form action="https://formdump.codeinstitute.net/" method="POST" > -->
+            <form action="#" method="POST" ></form>
+            <label for="form-name">Your name</label>
+            <input type="text" name="name" id="form-name" required>
+            <label for="form-email">Your email</label>
+            <input type="email" name="email" id="form-email" placeholder="your@email.com" required>
+            <label for="form-message" required>Your Message</label>
+            <textarea name="message" id="form-message" rows="8" required></textarea>
+            <input type="submit" value="Send it!">
+        </form>
+    </section>
+
     <footer>
         <ul class="social-media-links">
             <li><a href="https://facebook.com" rel="noopener external nofollow" target="_blank"><i
