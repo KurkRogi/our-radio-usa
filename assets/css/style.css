@@ -12,7 +12,9 @@
 }
 
 /* Basic resets */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
 
@@ -52,7 +54,7 @@ h2 {
     animation-duration: 440ms;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    animation-iteration-count: 2; 
+    animation-iteration-count: 2;
 }
 
 /* The above-the-fold styling*/
@@ -64,7 +66,6 @@ h2 {
     background-color: var(--main-color);
     height: 100vh;
     min-height: 667px;
-
 }
 
 .header-wraper {
@@ -72,7 +73,7 @@ h2 {
     background-color: var(--main-color);
 }
 
-#above-the-fold-section > * {
+#above-the-fold-section>* {
     max-width: 420px;
 }
 
@@ -170,7 +171,7 @@ https://css-tricks.com/snippets/css/css-triangle/ */
     flex-grow: 1;
 }
 
-#main-player > * {
+#main-player>* {
     margin: 0;
 }
 
@@ -184,6 +185,7 @@ https://css-tricks.com/snippets/css/css-triangle/ */
     margin: 0;
     color: white;
 }
+
 #stream-player {
     border: 1.5px solid var(--secondary-color);
     border-radius: 5px;
@@ -198,7 +200,7 @@ https://css-tricks.com/snippets/css/css-triangle/ */
     padding-bottom: 3vh;
 }
 
-#above-the-fold-section .secondary-nav-chevrons a:hover img{
+#above-the-fold-section .secondary-nav-chevrons a:hover img {
     animation-name: chevron-down-shake;
 }
 
@@ -206,15 +208,19 @@ https://css-tricks.com/snippets/css/css-triangle/ */
     start {
         transform: translateY(0);
     }
+
     25% {
         transform: translateY(5px);
     }
+
     50% {
         transform: translateY(0);
     }
+
     75% {
         transform: translateY(-5px);
     }
+
     end {
         transform: translateY(0);
     }
@@ -254,7 +260,7 @@ footer p {
     line-height: 1.5;
 }
 
-footer .secondary-nav-chevrons a:hover img{
+footer .secondary-nav-chevrons a:hover img {
     animation-name: chevron-up-shake;
 }
 
@@ -262,15 +268,19 @@ footer .secondary-nav-chevrons a:hover img{
     start {
         transform: translateY(0);
     }
+
     25% {
         transform: translateY(-5px);
     }
+
     50% {
         transform: translateY(0);
     }
+
     75% {
         transform: translateY(5px);
     }
+
     end {
         transform: translateY(0);
     }
@@ -286,7 +296,7 @@ footer .secondary-nav-chevrons a:hover img{
     margin: 0 auto;
 }
 
-#about-radio > * {
+#about-radio>* {
     max-width: 420px;
     width: 80%;
 }
@@ -315,6 +325,7 @@ footer .secondary-nav-chevrons a:hover img{
 .card {
     margin-bottom: 3rem;
 }
+
 .card h2 {
     color: var(--accent-color);
     margin-bottom: 0;
@@ -404,7 +415,7 @@ footer .secondary-nav-chevrons a:hover img{
     margin: 0 auto 2rem auto;
 }
 
-form > * {
+form>* {
     display: block;
     width: 100%;
     font-family: Kanit, sans-serif;
@@ -443,4 +454,50 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     cursor: pointer;
+}
+
+/* Media queries for larger screens */
+
+@media screen and (min-width: 660px) {
+    
+        /* Changes to header and main nav */
+    #above-the-fold-section>* {
+        max-width: 840px;
+    }
+
+    #above-the-fold-section header,
+    #page-top header {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    header {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo {
+        max-width: 100px;
+        aspect-ratio: 200/220;
+        background-image: url(../images/our-radio-usa-logo-transparent-outlines.svg);
+        background-size: contain;
+    }
+
+    #main-navigation li {
+        text-align: center;
+        padding: 0.25rem 0;
+        display: inline;
+        margin: 0 0.5rem;
+    }
+
+    #main-navigation a.current-page::before {
+        left: calc((var(--arrow-size) + 2px) * -1);
+    }
+    
+    #main-navigation a.current-page::after {
+        right: calc((var(--arrow-size) + 2px) * -1);
+    }
 }
