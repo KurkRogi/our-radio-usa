@@ -297,7 +297,7 @@ footer .secondary-nav-chevrons a:hover img {
     margin: 0 auto;
 }
 
-#about-radio>* {
+#about-radio > * {
     max-width: 420px;
     width: 80%;
 }
@@ -517,5 +517,26 @@ form input[type="submit"]:hover {
     footer nav {
         flex: 1 0 100%;
     }
-    
+
+    /* About radio changes */
+    #about-radio {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: start;
+        column-gap: 2rem;
+        margin: 0 max(2rem, calc(((100vw - 840px) / 2) + 2rem));
+    }
+
+    #about-radio h1 {
+        font-size: clamp(1.8rem, calc(100vw / 10), 2.5rem);
+        flex: 1 0 100%;
+        max-width: unset;
+        text-align: center;
+    }
+
+    #about-radio article {
+        min-width: 200px;
+        width: 30%;
+    }
 }
