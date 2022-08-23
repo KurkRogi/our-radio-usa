@@ -298,7 +298,7 @@ footer .secondary-nav-chevrons a:hover img {
 }
 
 #about-radio > * {
-    max-width: 420px;
+    max-width: 320px;
     width: 80%;
 }
 
@@ -311,8 +311,8 @@ footer .secondary-nav-chevrons a:hover img {
 
 /* Square responsiv div trick from CSS Tricks */
 .card div {
-    width: 70%;
-    padding-bottom: 70%;
+    width: 85%;
+    padding-bottom: 85%;
     position: relative;
     margin: 0 auto;
 }
@@ -537,6 +537,7 @@ form input[type="submit"]:hover {
 
     #about-radio article {
         min-width: 200px;
-        width: 30%;
+        width: initial;
+        flex: 1 1;
     }
 }
