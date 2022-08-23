@@ -439,7 +439,9 @@ form label {
 }
 
 form input,
-form textarea {
+form textarea,
+form select,
+form fieldset {
     margin-bottom: 0.5rem;
     border-radius: 3px;
     border-color: var(--main-color);
@@ -464,6 +466,10 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     cursor: pointer;
+}
+
+form select {
+    background-color: var(--accent-light-color);
 }
 
 /* Media queries for larger screens */
