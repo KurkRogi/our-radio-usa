@@ -81,6 +81,7 @@ h2 {
 #above-the-fold-section header,
 #page-top header {
     width: 80%;
+    max-width: 840px;
     padding: 1rem;
 }
 
@@ -539,5 +540,23 @@ form input[type="submit"]:hover {
         min-width: 200px;
         width: initial;
         flex: 1 1;
+    }
+
+    /* Schedule page */
+    #schedule {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: unset;
+        max-width: 840px;
+        padding: 0 2rem;
+    }
+
+    #schedule heading {
+        flex: 1 0 100%;
+    }
+
+    #schedule section {
+        flex: 1 0 50%;
     }
 }
