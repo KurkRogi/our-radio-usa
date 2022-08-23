@@ -37,15 +37,11 @@ The following features need to be implemented to fulfil [Scope Plane](#scope-pla
 *Describe what tests where done, what bugs were detected and addressed or not. Responsiveness, links, images*
 
 - cross-browser testing
-- crores-platform testing
+- cross-platform testing
 
 ### Bugs fixed
 
 - Missing blank lines was causing wrong display of README.md file in browser.
-
-### Bugs Remaining
-
-
 
 ### **Validation**
 
@@ -96,7 +92,7 @@ The basic features which need to be implemented to achieve the MVP are as follow
 
 Extended features to implement are:
 
-- Give access to past programmes to allow listeners from different time zones to listen at time convenient to them
+- Give access to past programmes to allow listeners from different time zones to listen at time convenient to them (archive)
 - Showcase authors and staff profiles, with photos in order to create better connection with listeners
 - Feature to allow posting comments/testimonies to create the *alive and connected* vibe
 
@@ -106,10 +102,9 @@ Extended features to implement are:
 - The 'Programming' information is less important and is the secondary information, presented on a separate page.
 - The third order of importance is the 'Contact' form, presented on another separate page.
 
-### **Skeleton Plane**
+### **Skeleton & Surface Plane**
 
-*To follow but closely related to the above*
+Having the above in mind two high resolution prototypes were created in Adobe XD to ilustrate the concepts and layout.
 
-### **Surface Plane**
-
-*To follow. Modern, clean and uncluttered design with minimal distraction is preferred. Contrary to current trend, the background should be rather dark than light. This is more important on mobile devices so maybe change background to dark only for small screens*
+- [Mobile phone layout prototype](https://xd.adobe.com/view/f625b5e9-6879-4303-9832-15503cf1e178-a376/?fullscreen) was created first because listeners on mobile phones are very likely the biggest audience for the service.
+- [Desktop layout prototype](https://xd.adobe.com/view/3c15a152-6176-4b54-9c93-5586255d348f-6946/?fullscreen) was created next to illustrate service responsive bahaviour of the service on bigger screen.
