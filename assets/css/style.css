@@ -79,6 +79,13 @@ h2 {
     max-width: 420px;
 }
 
+#above-the-fold-section .background-wrapper {
+    flex-grow: 1;
+    width: 80%;
+    max-width: 840px;
+    padding 1rem;
+}
+
 #above-the-fold-section header,
 #page-top header {
     width: 80%;
@@ -162,8 +169,23 @@ https://css-tricks.com/snippets/css/css-triangle/ */
 }
 
 /* Main section styling */
+
+.background-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#above-the-fold-section .v-position-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #main-player {
     width: 80%;
+    max-width: 336px;
     display: flex;
     padding-bottom: 3vh;
     flex-direction: column;
@@ -172,6 +194,7 @@ https://css-tricks.com/snippets/css/css-triangle/ */
     column-gap: 0.5rem;
     row-gap: 3vh;
     flex-grow: 1;
+    margin: 0 auto;
 }
 
 #main-player>* {
@@ -193,6 +216,7 @@ https://css-tricks.com/snippets/css/css-triangle/ */
     border: 1.5px solid var(--secondary-color);
     border-radius: 5px;
     overflow: hidden;
+    background-color: var(--main-color);
     /* the layout holds integrity down to 760px height
     the below calculation reduces stream player widget for smaller screens */
     width: clamp(150px, calc(240px - max(0px, calc((780px - 100vh) * 0.796))), 80%);
@@ -201,6 +225,16 @@ https://css-tricks.com/snippets/css/css-triangle/ */
 #above-the-fold-section .secondary-nav-chevrons {
     width: 80%;
     padding-bottom: 3vh;
+    margin: 0 auto;
+}
+
+#above-the-fold-section .secondary-nav-chevrons a img {
+    animation-name: chevron-wobble;
+    animation-duration: 440ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+    animation-delay: 5s;
 }
 
 #above-the-fold-section .secondary-nav-chevrons a:hover img {
@@ -226,6 +260,28 @@ https://css-tricks.com/snippets/css/css-triangle/ */
 
     end {
         transform: translateY(0);
+    }
+}
+
+@keyframes chevron-wobble {
+    start {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(-15deg);
+    }
+
+    end {
+        transform: rotate(0);
     }
 }
 
@@ -478,11 +534,9 @@ form select {
 @media screen and (min-width: 660px) {
     
     /* Changes to header and main nav */
-    #above-the-fold-section > * {
-        max-width: 840px;
-    }
 
     #above-the-fold-section header,
+    #above-the-fold-section .background-wrapper,
     #page-top header {
         width: 100%;
         padding: 2rem;
@@ -644,5 +698,38 @@ form select {
     form input[type="submit"] {
         background-color: var(--accent-color);
         color: var(--main-color);
+    }
+
+    /* Main player section of home page */
+
+    #above-the-fold-section .background-wrapper {
+        height: 100%;
+        max-width: unset;
+        background-color: unset;
+        background-image: url("../images/happy-young-student-man-listening-music-park.jpg");
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        padding-left: max(2rem, calc(((100vw - 840px) / 2) + 2rem));
+        padding-right: max(2rem, calc(((100vw - 840px) / 2) + 2rem));
+        padding-bottom: 0;
+    }
+
+    #above-the-fold-section .v-position-wrapper {
+        padding: 3vh 0;
+    }
+
+    #main-player {
+        background-color: var(--main-color-90pc);
+        padding: 3vh;
+        border-radius: 10px;
+        flex-grow: 0;
+        align-self: end;
+        margin: 0;
+    }
+
+    #above-the-fold-section .secondary-nav-chevrons {
+        padding-bottom: 0;
+        filter: drop-shadow(5px 5px 20px black);
     }
 }

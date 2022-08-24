@@ -42,6 +42,7 @@ The following features need to be implemented to fulfil [Scope Plane](#scope-pla
 ### Bugs fixed
 
 - Missing blank lines was causing wrong display of README.md file in browser.
+- url to background image of the contact page was wrong (relative to index htm and not styles.css). This work OK for some reason in gitpod environment but not on github.
 
 ### **Validation**
 
