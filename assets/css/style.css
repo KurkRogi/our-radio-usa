@@ -602,7 +602,7 @@ form select {
     
     /* Contact page styling */
     .background-wrapper {
-        background-image: url("/assets/images/contact-page-background-image.jpg");
+        background-image: url("../images/contact-page-background-image.jpg");
         background-size: cover;
         background-position: left;
         background-repeat: no-repeat;
