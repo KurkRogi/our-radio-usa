@@ -53,10 +53,6 @@ h2 {
 .secondary-nav-chevrons img {
     height: 32px;
     width: 125px;
-    animation-duration: 440ms;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 2;
 }
 
 /* The above-the-fold styling*/
@@ -229,16 +225,17 @@ https://css-tricks.com/snippets/css/css-triangle/ */
 }
 
 #above-the-fold-section .secondary-nav-chevrons a img {
-    animation-name: chevron-wobble;
+    animation-name: chevron-down-shake;
     animation-duration: 440ms;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     animation-iteration-count: 2;
-    animation-delay: 5s;
+    animation-delay: 0s;
+    animation-play-state: paused;
 }
 
 #above-the-fold-section .secondary-nav-chevrons a:hover img {
-    animation-name: chevron-down-shake;
+    animation-play-state: running;
 }
 
 @keyframes chevron-down-shake {
@@ -319,8 +316,18 @@ footer p {
     line-height: 1.3;
 }
 
-footer .secondary-nav-chevrons a:hover img {
+footer .secondary-nav-chevrons img {
     animation-name: chevron-up-shake;
+    animation-duration: 440ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+    animation-play-state: paused;
+}
+
+footer .secondary-nav-chevrons a:hover img {
+    animation-play-state: running;
+
 }
 
 @keyframes chevron-up-shake {
@@ -355,7 +362,7 @@ footer .secondary-nav-chevrons a:hover img {
     margin: 0 auto;
 }
 
-#about-radio > * {
+#about-radio>* {
     max-width: 320px;
     width: 80%;
 }
@@ -532,7 +539,7 @@ form select {
 /* Media queries for larger screens */
 
 @media screen and (min-width: 660px) {
-    
+
     /* Changes to header and main nav */
 
     #above-the-fold-section header,
@@ -567,7 +574,7 @@ form select {
     #main-navigation a.current-page::before {
         left: calc((var(--arrow-size) + 2px) * -1);
     }
-    
+
     #main-navigation a.current-page::after {
         right: calc((var(--arrow-size) + 2px) * -1);
     }
@@ -579,7 +586,7 @@ form select {
         justify-content: space-between;
         flex-wrap: wrap;
     }
-        
+
     footer p {
         text-align: left;
     }
@@ -653,7 +660,7 @@ form select {
         margin-bottom: 1rem;
         margin-top: 2rem;
     }
-    
+
     /* Contact page styling */
     .background-wrapper {
         background-image: url("../images/contact-page-background-image.jpg");
@@ -686,8 +693,8 @@ form select {
         margin-top: 0;
     }
 
-   form label,
-   form legend {
+    form label,
+    form legend {
         color: white;
     }
 
