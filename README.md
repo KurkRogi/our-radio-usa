@@ -34,10 +34,13 @@ The following features need to be implemented to fulfil [Scope Plane](#scope-pla
 
 ## **Testing**
 
-*Describe what tests where done, what bugs were detected and addressed or not. Responsiveness, links, images*
+I tested the website in Firefox, Safari, Chrome and Edge browsers. Both responsivenes and integrity of the layouts were checked. The website worked in all four browsers without any problems.
 
-- cross-browser testing
-- cross-platform testing
+I confirmed that all texts a legible in both the mobile and desktop versions. 
+
+I checked every link and confirmed that all external links open in a new widow with the exeption of the mail link which opens default email client to allow user to complete the task.
+
+The contact form was tested by entering information in relevant fields and confirming that the information was correctly passed over to the https://formdump.codeinstitute.net/ service. Next I checked if the browser flags user for not filling in all required input fields in the form. The oposite was also tested - I checked that not required inputs, the check buttons in contact reference sections are not flagged when user doesn't select any of them.
 
 ### Bugs fixed
 
@@ -46,9 +49,32 @@ The following features need to be implemented to fulfil [Scope Plane](#scope-pla
 
 ### **Validation**
 
-- HTML validation
-- CSS validation
-- SVG graphics was validated with https://validator.w3.org/check and passed the validation without errors or warnings.
+#### **HTML, CSS & SVG**
+All pages were tested with W3C validators:
+
+- [Markup validator](https://validator.w3.org/#validate_by_input)
+- [CSS validatior](https://jigsaw.w3.org/css-validator/#validate_by_input)
+
+Additionally all SVG images were validated with the same [Markup validator service](https://validator.w3.org/#validate_by_upload)
+
+All test passed.
+
+#### **Accesibility**
+
+Accesibility was tested with the Chrome's Litehouse feature and high scores were acheived on all pages. These are results for movile version of pages but similar scores were acheived with desktop layout.
+
+**Home page**
+![Home page score](assets/images/home-page-score.png)
+
+**Schedule page**
+![Home page score](assets/images/shedule-score.png)
+
+**Contact page**
+![Home page score](assets/images/contact-score.png)
+
+**Apps page**
+![Home page score](assets/images/apps-score.png)
+
 
 ## **Deployment**
 
@@ -72,7 +98,16 @@ To deploy this application please follow these steps:
 
 ## **Credits**
 
-*This section will list all the media sources, code inspiration and guides followed in order to create the website.*
+- The code for the radio streaming service widget is supplied by the [provider](https://radio.co) and there's very limited control over it.
+- Images come from [Freepik](https://www.freepik.com)
+- Music played on the stream comes from https://freemusicarchive.org
+- The colour pallete was created with [Coolors](coolors.co)
+- Font used is Kanit from [Google Fonts](https://fonts.google.com/)
+- [Font Awesome](https://fontawesome.com/) icons were used for media links in the footer
+
+## **Acknowledgements**
+
+- Triangles indicating current page are created following this [CSS Tricks Guide](https://css-tricks.com/snippets/css/css-triangle/)
 
 ## **UX Considerations**
 
@@ -103,9 +138,27 @@ Extended features to implement are:
 - The 'Programming' information is less important and is the secondary information, presented on a separate page.
 - The third order of importance is the 'Contact' form, presented on another separate page.
 
-### **Skeleton & Surface Plane**
+### **Skeleton Plane**
 
 Having the above in mind two high resolution prototypes were created in Adobe XD to ilustrate the concepts and layout.
 
 - [Mobile phone layout prototype](https://xd.adobe.com/view/f625b5e9-6879-4303-9832-15503cf1e178-a376/?fullscreen) was created first because listeners on mobile phones are very likely the biggest audience for the service.
 - [Desktop layout prototype](https://xd.adobe.com/view/3c15a152-6176-4b54-9c93-5586255d348f-6946/?fullscreen) was created next to illustrate service responsive bahaviour of the service on bigger screen.
+
+As the most important feature is the radio stream player it was placed on the home page, above the fold together with main navigation in the header section.
+
+Additionaly a seconary navigation elements were added both in the above the fold section, to indicate further content below and at the bottom of the footer to alow quick return to main navigation in the page header.
+
+Information about the radio profile was also placed on the main page but below the fold as it's considered secondary. A link in the main navigation area allows quick acces to it.
+
+Subsequent pages are dedicated to only one topic an follow the same pattern as the home page, sharing the same header with navigation and footer.
+
+### **Surface Plane**
+
+As mobile phone users are considered the most important target of the website following decisions were made:
+
+- Vivid colors were selected with strong contrast in order attract user attention to important elements of the website. This is to create lively atmosfere and create warm friendly feelings and welcoming atmosphere.
+- A sans-serif font with large small letters (in relation to capital letters) was choosen to give users using mobile devices beter experience and easier to read text.
+- Small sizes of fonts were avoided, especially in interactive elements, i.e. navigation
+- Large backround images were not used for mobile layout, they appear only in the desktop version
+- SVG images were used where posiible to reduce download size and also to benefit from they scalability and acheive crisp sharp picture on high resolution screens 
