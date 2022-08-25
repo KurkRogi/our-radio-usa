@@ -83,7 +83,7 @@ h2 {
     flex-grow: 1;
     width: 80%;
     max-width: 840px;
-    padding 1rem;
+    padding: 1rem;
 }
 
 #above-the-fold-section header,
@@ -242,7 +242,7 @@ https://css-tricks.com/snippets/css/css-triangle/ */
 }
 
 @keyframes chevron-down-shake {
-    start {
+    0% {
         transform: translateY(0);
     }
 
@@ -258,13 +258,13 @@ https://css-tricks.com/snippets/css/css-triangle/ */
         transform: translateY(-5px);
     }
 
-    end {
+    100% {
         transform: translateY(0);
     }
 }
 
 @keyframes chevron-wobble {
-    start {
+    0% {
         transform: rotate(0);
     }
 
@@ -280,7 +280,7 @@ https://css-tricks.com/snippets/css/css-triangle/ */
         transform: rotate(-15deg);
     }
 
-    end {
+    100% {
         transform: rotate(0);
     }
 }
@@ -324,7 +324,7 @@ footer .secondary-nav-chevrons a:hover img {
 }
 
 @keyframes chevron-up-shake {
-    start {
+    0% {
         transform: translateY(0);
     }
 
@@ -340,7 +340,7 @@ footer .secondary-nav-chevrons a:hover img {
         transform: translateY(5px);
     }
 
-    end {
+    100% {
         transform: translateY(0);
     }
 }
