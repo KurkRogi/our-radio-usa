@@ -1,6 +1,8 @@
 # Our Radio USA Project
 
-Our Radio USA is a website for people who emigrated to abroad and would like to hear live streamed radio from their homeland. Modern technology of audio streaming allows them to have access to this radio service from any place all over the world, any time on any device. This allows listeners to be in touch with current affairs of their country so they can relate to them in conversations with their families and friends home.
+![Project presentation mockup](/assets/images/project-presentation-mockup.jpg)
+
+[Our Radio USA](https://kurkrogi.github.io/our-radio-usa/) is a website for people who emigrated to abroad and would like to hear live streamed radio from their homeland. Modern technology of audio streaming allows them to have access to this radio service from any place all over the world, any time on any device. This allows listeners to be in touch with current affairs of their country so they can relate to them in conversations with their families and friends home.
 
 ## Features
 
@@ -11,19 +13,36 @@ Our Radio USA is a website for people who emigrated to abroad and would like to 
 - This feature is repeated on all pages and additionally helps to identify current location on the website by highlighting corresponding link.
 - By having this feature available on all pages the need to use browsers navigation mechanism is eliminated, especially on mobile devices.
 
+![Screenshot of the navigation](/assets/images/feature-navbar-desktop.png)
+
 2. **The Home Page**
 **[UX considerations](#ux-considerations)** indicated that the most important functionality is the access to the radio stream and this is implemented on the home page of this application. This page consists of two features which allow the user to do this in easy and unobstructed way.
 - The above the fold section of home page includes an animated image with a CTA element which is a Play widget. The widget allows to start and pause playing the radio.  
 This section also includes a secondary CTA button which gets the user to the below section of the home page with additional methods of accessing the radio.
 - Below the fold section lists available mobile applications with which the radio can be listened to.
 
+![Screenshot of the main player section](/assets/images/feature-main-player.png)
+![Screenshot of the about section](/assets/images/feature-about-section.png)
+
 3. **The Footer**
 The footer feature displays links to the radio's social media and repeats links to two other features: contact form and programme guide
 
+![Screenshot of the footer](/assets/images/feature-footer.png)
+
 4. **Programme Guide Page**
 This feature displays radio programming in a tabular form
+
+![Screenshot of the schedule](/assets/images/feature-schedule-section.png)
+
 5. **Contact Page**
 This page allows user to send a message to the radio staff by filling in a contact form
+
+![Screenshot of the contact form](/assets/images/feature-contact-form.png)
+
+6. **App Page**
+This feature presents the user with alternative ways to enjoy the radio: Android and iPhone apps.
+
+![Screenshot of the apps page](/assets/images/feature-apps-section.png)
 
 ### **Features Left to Implement**
 The following features need to be implemented to fulfil [Scope Plane](#scope-plane) decisions.
@@ -34,18 +53,18 @@ The following features need to be implemented to fulfil [Scope Plane](#scope-pla
 
 ## **Testing**
 
-I tested the website in Firefox, Safari, Chrome and Edge browsers. Both responsivenes and integrity of the layouts were checked. The website worked in all four browsers without any problems.
+I tested the website in Firefox, Safari, Chrome and Edge browsers. Both responsiveness and integrity of the layouts were checked. The website worked in all four browsers without any problems.
 
 I confirmed that all texts a legible in both the mobile and desktop versions. 
 
 I checked every link and confirmed that all external links open in a new widow with the exeption of the mail link which opens default email client to allow user to complete the task.
 
-The contact form was tested by entering information in relevant fields and confirming that the information was correctly passed over to the https://formdump.codeinstitute.net/ service. Next I checked if the browser flags user for not filling in all required input fields in the form. The oposite was also tested - I checked that not required inputs, the check buttons in contact reference sections are not flagged when user doesn't select any of them.
+The contact form was tested by entering information in relevant fields and confirming that the information was correctly passed over to the https://formdump.codeinstitute.net/ service. Next I checked if the browser flags user for not filling in all required input fields in the form. The opposite was also tested - I checked that not required inputs, the check buttons in contact reference sections are not flagged when user doesn't select any of them.
 
 ### Bugs fixed
 
 - Missing blank lines was causing wrong display of README.md file in browser.
-- url to background image of the contact page was wrong (relative to index htm and not styles.css). This work OK for some reason in gitpod environment but not on github.
+- URL to background image of the contact page was wrong (not relative to styles.css). This work OK for some reason in gitpod environment but not on github.
 
 ### **Validation**
 
@@ -59,9 +78,9 @@ Additionally all SVG images were validated with the same [Markup validator servi
 
 All test passed.
 
-#### **Accesibility**
+#### **Accessibility*
 
-Accesibility was tested with the Chrome's Litehouse feature and high scores were acheived on all pages. These are results for movile version of pages but similar scores were acheived with desktop layout.
+Accessibility was tested with the Chrome's Litehouse feature and high scores were achieved on all pages. These are results for mobile version of pages but similar scores were achieved with desktop layout.
 
 **Home page**
 ![Home page score](assets/images/home-page-score.png)
@@ -101,7 +120,7 @@ To deploy this application please follow these steps:
 - The code for the radio streaming service widget is supplied by the [provider](https://radio.co) and there's very limited control over it.
 - Images come from [Freepik](https://www.freepik.com)
 - Music played on the stream comes from https://freemusicarchive.org
-- The colour pallete was created with [Coolors](coolors.co)
+- The colour palette was created with [Coolors](coolors.co)
 - Font used is Kanit from [Google Fonts](https://fonts.google.com/)
 - [Font Awesome](https://fontawesome.com/) icons were used for media links in the footer
 
@@ -140,25 +159,25 @@ Extended features to implement are:
 
 ### **Skeleton Plane**
 
-Having the above in mind two high resolution prototypes were created in Adobe XD to ilustrate the concepts and layout.
+Having the above in mind two high resolution prototypes were created in Adobe XD to illustrate the concepts and layout.
 
 - [Mobile phone layout prototype](https://xd.adobe.com/view/f625b5e9-6879-4303-9832-15503cf1e178-a376/?fullscreen) was created first because listeners on mobile phones are very likely the biggest audience for the service.
-- [Desktop layout prototype](https://xd.adobe.com/view/3c15a152-6176-4b54-9c93-5586255d348f-6946/?fullscreen) was created next to illustrate service responsive bahaviour of the service on bigger screen.
+- [Desktop layout prototype](https://xd.adobe.com/view/3c15a152-6176-4b54-9c93-5586255d348f-6946/?fullscreen) was created next to illustrate service responsive behaviour of the service on bigger screen.
 
 As the most important feature is the radio stream player it was placed on the home page, above the fold together with main navigation in the header section.
 
-Additionaly a seconary navigation elements were added both in the above the fold section, to indicate further content below and at the bottom of the footer to alow quick return to main navigation in the page header.
+Additionally a secondary navigation elements were added both in the above the fold section, to indicate further content below and at the bottom of the footer to allow quick return to main navigation in the page header.
 
-Information about the radio profile was also placed on the main page but below the fold as it's considered secondary. A link in the main navigation area allows quick acces to it.
+Information about the radio profile was also placed on the main page but below the fold as it's considered secondary. A link in the main navigation area allows quick access to it.
 
-Subsequent pages are dedicated to only one topic an follow the same pattern as the home page, sharing the same header with navigation and footer.
+Subsequent pages are dedicated to only one topic and follow the same pattern as the home page, sharing the same header with navigation and footer. The content of schedule page is split into two columns with information about daily programming on left and weekday specials presented in separate column. 
 
 ### **Surface Plane**
 
 As mobile phone users are considered the most important target of the website following decisions were made:
 
-- Vivid colors were selected with strong contrast in order attract user attention to important elements of the website. This is to create lively atmosfere and create warm friendly feelings and welcoming atmosphere.
-- A sans-serif font with large small letters (in relation to capital letters) was choosen to give users using mobile devices beter experience and easier to read text.
-- Small sizes of fonts were avoided, especially in interactive elements, i.e. navigation
-- Large backround images were not used for mobile layout, they appear only in the desktop version
-- SVG images were used where posiible to reduce download size and also to benefit from they scalability and acheive crisp sharp picture on high resolution screens 
+- Vivid colours were selected with strong contrast in order attract user attention to important elements of the website. This is to create lively atmosphere and create warm friendly feelings and welcoming atmosphere.
+- A sans-serif font with large small letters (in relation to capital letters) was chosen to give users using mobile devices better experience and easier to read text.
+- Small sizes of fonts were avoided, especially in interactive elements, i.e. navigation.
+- Large background images were not used for mobile layout, they appear only in the desktop version.
+- SVG images were used where possible to reduce download size and also to benefit from they scalability and achieve crisp sharp picture on high resolution screens.
